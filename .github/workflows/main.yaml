@@ -1,0 +1,12 @@
+name: Main branch workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker_build_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Cantonite/.github/.github/workflow-templates/create-and-publish-a-docker-image.yaml@main`
