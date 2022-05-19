@@ -7,6 +7,4 @@ on:
 
 jobs:
   docker_build_and_publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Cantonite/.github/.github/workflows/create-and-publish-a-docker-image.yaml@main
+    uses: Cantonite/.github/.github/workflows/create-and-publish-a-docker-image.yaml@main
